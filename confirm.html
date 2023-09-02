@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFun(){
+            var userReq=confirm("Do you want to visit website");
+            if(userReq==true){
+                window.open("/dom.html");
+            }
+            else{
+                document.write("user dont want to open");
+                return false;
+            }
+        }
+    </script>
+    <input type="button" value="click me" onclick="myFun()">
+</body>
+</html>

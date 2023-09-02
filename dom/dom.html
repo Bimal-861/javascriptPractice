@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <p id="bimal">Bimal</p>
+    <p class="surname">Maity</p>
+    <ul>
+        <li>like</li>
+        <li>share</li>
+        <li>subscribe</li></ul>
+    <!-- how to access element by id -->
+    <script>
+        var a=document.getElementById("bimal").innerHTML;
+        document.write(a);
+    </script>
+    <!-- how to acces element by class -->
+    <script>
+        var b=document.getElementsByClassName("surname")[0].innerHTML;
+        document.write(b);
+    </script>
+    <!-- how to access by tag -->
+    <script>
+        var tag=document.getElementsByTagName("p")[0].innerHTML;
+        document.write(tag);
+    </script>
+    <!-- how to access first element -->
+    <script>
+        var p=document.querySelector('p').innerHTML;
+        document.write(p);
+    </script>
+    <!-- how to access children -->
+    <script>
+        var child=document.body.children;
+        console.log(child);
+//<!-- crete a new node -->
+        var para=document.createElement("p");
+        var textNode=document.createTextNode("This is textnode created by javascript");
+        para.appendChild(textNode);
+        console.log(para);
+        document.body.appendChild(para);
+
+       // <!-- access first and last child -->
+       var list=document.body.querySelector("ul");
+       console.log(list.firstChild);
+       console.log(list.lastChild);
+
+       //acess siblings
+       var sib=bimal.nextElementSibling;
+       console.log(sib);
+
+       console.log(list.parentNode);
+
+    </script>
+</body>
+</html>

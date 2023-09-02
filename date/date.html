@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dateTo(){
+            var dateObj=new Date();
+            var year=dateObj.getUTCFullYear();
+            var month=dateObj.getUTCMonth();
+            var date=dateObj.getUTCDay();
+            console.log(year+"/"+month+"/"+date);
+        }
+       
+    </script>
+</head>
+<body>
+    <h1 onmouseleave="dateTo()">this is date</h1>
+   
+</body>
+</html>

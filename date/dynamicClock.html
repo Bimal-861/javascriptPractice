@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="showClock" onclick="clearInterval(clock)"></button>
+    <button id="clearAlert">click</button>
+    <script>
+        var clock=setInterval(clocktiming,1000);
+        function clocktiming(){
+            var d=new Date();
+            var t=d.toLocaleTimeString();
+            document.getElementById("showClock").innerHTML=t;
+            
+        }
+
+        var d = setTimeout(showalert,3000);
+        function showalert(){
+            alert("Welcome to my website");
+        }
+
+       
+
+    </script>
+</body>
+</html>
